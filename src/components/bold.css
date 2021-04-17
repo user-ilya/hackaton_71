@@ -1,0 +1,25 @@
+.PanelHeader__content {
+    text-align: left;
+    font-weight: normal;
+    }
+    .PanelHeader__content{
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    .kar{
+    color: rgb(42, 91, 165);
+    }
+    .PanelHeader__in{
+    width: 100%;
+    justify-content: start;
+    }
+    .FixedLayout__in{
+    width: 100%;
+    }
+    .PanelHeader__right{
+    display: none;
+    }
+    .Icon{
+    margin-right: 15px;
+    }
