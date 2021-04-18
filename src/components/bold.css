@@ -13,6 +13,7 @@
     .PanelHeader__in{
     width: 100%;
     justify-content: start;
+    z-index: 100;
     }
     .FixedLayout__in{
     width: 100%;
@@ -22,4 +23,27 @@
     }
     .Icon{
     margin-right: 15px;
+    }
+    
+    .Avatar__img {
+    display: block;
+    border-radius: 50% !important;
+    }
+    .Banner--android .Banner__in, .Banner--vkcom .Banner__in {
+    background: #5ba2f3;
+    }
+    
+    .Avatar__in {
+    position: unset;
+    
+    }
+    
+    .Caption--w-regular {
+    color: white !important;
+    }
+    .Card {
+    z-index: -1;
+    }
+    .vkuiPanel{
+        margin-bottom: 20px;
     }

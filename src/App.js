@@ -8,13 +8,19 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Home from './panels/Home';
 import Add from './components/Add_children'
 import Prof from './components/prof_rod'
+import LayoutParent from './components/layout_parent'
+import Main from './components/main'
+import RegSession from './components/regSession'
 
 const App = () => {
 	return (
 		<>
-			<Home/> 
+			{/* <Home/> */}  
 			{/* <Add/>  */}
-			{/* <Prof/> */}
+			 <Prof/>  
+			 {/* <LayoutParent/>  */}
+			 {/* <Main/> */}
+			 {/* <RegSession/> */}
 		</>	
 	)
 }

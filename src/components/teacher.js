@@ -48,7 +48,7 @@ const Teacher = () => {
 			</NativeSelect>
         </FormItem>
         <FormItem top="Дата рождения">
-			<Input type="data" />
+			<Input type="date" />
 		</FormItem>
         <FormItem top="О себе">
           <Textarea placeholder="Расскажите о себе" />
@@ -60,5 +60,6 @@ const Teacher = () => {
         </>
     )
 }
+
 
 export default Teacher;

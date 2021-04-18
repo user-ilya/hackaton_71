@@ -37,18 +37,8 @@ const Home = () => {
 	const [value,setValue] = useState(1);
 
 	const changeHandle = (e) => {
-		if (setValue(e.target.value) == '1') {
-			content = <Teach/>
-		}
-		if (setValue(e.target.value) == '2') {
-			content = <Parent/>
-		}
-		if(setValue(e.target.value) == '3') {
-			content = <Teacher/>
-		}
+		setValue(e.target.value) 
 	}
-
-	
 
 	return(
 		<>
@@ -76,7 +66,11 @@ const Home = () => {
 				onChange={changeHandle}
 				>Преподаватель</Radio>
 		</Group>
-		{content}
+		{{
+			1: <Teach/>,
+			2:<Parent/>,
+			3:<Teacher/>
+		}[value]}
 	</Group>
 	</>
 	)

@@ -25,42 +25,46 @@ import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import Input from '@vkontakte/vkui/dist/components/Input/Input';
 import Select from '@vkontakte/vkui/dist/components/Select/Select';
-import { Icon24Add } from '@vkontakte/icons';
-import { PanelHeaderBack, FormItem } from '@vkontakte/vkui';
+import { Icon24Add, Icon12ChevronOutline } from '@vkontakte/icons';
+import { PanelHeaderBack, FormItem, SubnavigationButton, SubnavigationBar, Link } from '@vkontakte/vkui';
 import "@vkontakte/vkui/dist/vkui.css";
+
 
 
 import './bold.css'
 
 
 const Prof = () => {
-return(
-<>
-<Panel>
-<PanelHeader left={<PanelHeaderBack></PanelHeaderBack>}>Родитель{<Icon20Write className = 'kar'></Icon20Write>}</PanelHeader>
-</Panel>
-<Group>
-<Banner
-before={<Avatar size={96} mode="image" src="https://sun9-32.userapi.com/uFzLOK55iY7pC0DHjneEdP9G6gXcXi2Mx.." />}
-header="Иванов Иван"
-subheader="19.10.1988"
-// actions={<Button before={<Icon24Play />}>Слушать</Button>}
-/>
+    return(
+    <>
+    <Panel>
+        <PanelHeader left={<PanelHeaderBack></PanelHeaderBack>}>Родитель{<Icon20Write className = 'kar'></Icon20Write>}</PanelHeader>
+    </Panel>
+    <Group>
 
-<FormItem top="Ребенок">
-<Select
-placeholder="Не выбран"
-//options={getRandomUsers(10).map(user => ({ label: user.name, value: user.id, avatar: user.photo_100 }))}
-renderOption={({ option, ...restProps }) => (
-<CustomSelectOption {...restProps} before={<Avatar size={24} src={option.avatar} />} />
-)}
-/>
-</FormItem>
-<Div>
-<Button mode="outline" size="l" before={<Icon24Add/>}>Добавить ребенка</Button>
-</Div>
+    <Banner
+            before={<Avatar size={96} mode="image" src={'https://gorobzor.ru/public/news/images/61378.jpg'}/>}//поставить картинку
+            header="Иванов Иван"
+            subheader="19.10.1988"
+        // actions={<Button before={<Icon24Play />}>Слушать</Button>}
+    />
+
+    <Header mode="primary" aside={<Link> Подробнее</Link>}
+        indicator={<Counter size="s" mode="prominent">3</Counter>}
+        >Алина Никитина
+    </Header>
+    <Header mode="primary" aside={<Link> Подробнее</Link>}
+        >Роман Чижкин
+    </Header>
+    <Header mode="primary" aside={<Link> Подробнее</Link>}
+        >Алексей Малинин
+    </Header>
+    
+    <Div>
+       <Button mode="outline" size="l" before={<Icon24Add/>}>Добавить ребенка</Button>
+     </Div>
 {/* <Banner
-before={<Avatar size={96} mode="image" src="https://sun9-63.userapi.com/yOEQYPHrNHjZEoanbqPb65HPl5iojmiLg.." />}
+before={<Avatar size={96} mode="image" src="https://sun9-63.userapi.com/yOEQYPHrNHjZEoanbqPb65HPl5iojmiLgLzfGA/W3geVMMt8TI.jpg" />}
 header="Баста в Ледовом"
 subheader="Большой концерт"
 asideMode="dismiss"
@@ -72,3 +76,4 @@ actions={<Button>Подробнее</Button>}
 
 }
 export default Prof
+

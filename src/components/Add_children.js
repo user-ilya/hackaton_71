@@ -32,52 +32,51 @@ import '../components/Home.css'
 
 
 const Add = () => {
-return(
-<>
-<Panel>
-<PanelHeader left={<PanelHeaderBack></PanelHeaderBack>}>Добавить ребенка</PanelHeader>
-</Panel>
-<Group>
-<FormItem top="Фамилия ребенка">
-<Input type="text" placeHolder={"Введите фамилию"} />
-</FormItem>
-<FormItem top="Имя ребенка">
-<Input type="text" placeHolder={"Введите имя"} />
-</FormItem>
-<FormItem top="Отчество ребенка">
-<Input type="text" placeHolder={"Введите отчество"} />
-</FormItem>
-<FormItem top="Город">
-<Select
-placeholder="Не выбран"
-//options={getRandomUsers(10).map(user => ({ label: user.name, value: user.id, avatar: user.photo_100 }))}
-renderOption={({ option, ...restProps }) => (
-<CustomSelectOption {...restProps} before={<Avatar size={24} src={option.avatar} />} />
-)}
-/>
-</FormItem>
-<FormItem top="Название секции">
-<Select
-placeholder="Не выбран"
-//options={getRandomUsers(10).map(user => ({ label: user.name, value: user.id, avatar: user.photo_100 }))}
-renderOption={({ option, ...restProps }) => (
-<CustomSelectOption {...restProps} before={<Avatar size={24} src={option.avatar} />} />
-)}
-/>
-</FormItem>
-<Div>
-<Button mode="outline" size="l" before={<Icon24Add/>}>Добавить ребенка</Button>
-</Div>
-{/* <Banner
-before={<Avatar size={96} mode="image" src="https://sun9-63.userapi.com/yOEQYPHrNHjZEoanbqPb65HPl5iojmiLg.." />}
-header="Баста в Ледовом"
-subheader="Большой концерт"
-asideMode="dismiss"
-actions={<Button>Подробнее</Button>}
-/> */}
-</Group>
-</>
-)
-
+    return(
+        <>
+        <Panel>
+            <PanelHeader left={<PanelHeaderBack></PanelHeaderBack>}>Добавить ребенка</PanelHeader>
+        </Panel>
+        <Group>
+            <FormItem top="Фамилия ребенка">
+                <Input type="text" placeHolder={"Введите фамилию"} />
+            </FormItem>
+            <FormItem top="Имя ребенка">
+                <Input type="text" placeHolder={"Введите имя"} />
+            </FormItem>
+            <FormItem top="Отчество ребенка">
+                <Input type="text" placeHolder={"Введите отчество"} />
+            </FormItem>
+            <FormItem top="Город">
+                <Select
+                placeholder="Не выбран"
+                //options={getRandomUsers(10).map(user => ({ label: user.name, value: user.id, avatar: user.photo_100 }))}
+                renderOption={({ option, ...restProps }) => (
+                <CustomSelectOption {...restProps} before={<Avatar size={24} src={option.avatar} />} />
+                )}
+                />
+            </FormItem>
+            <FormItem top="Название секции">
+                <Select
+                placeholder="Не выбран"
+                //options={getRandomUsers(10).map(user => ({ label: user.name, value: user.id, avatar: user.photo_100 }))}
+                renderOption={({ option, ...restProps }) => (
+                <CustomSelectOption {...restProps} before={<Avatar size={24} src={option.avatar} />} />
+                )}
+                />
+            </FormItem>
+            <Div>
+                <Button mode="outline" size="l" before={<Icon24Add/>}>Добавить ребенка</Button>
+            </Div>
+        {/* <Banner
+        before={<Avatar size={96} mode="image" src="https://sun9-63.userapi.com/yOEQYPHrNHjZEoanbqPb65HPl5iojmiLg.." />}
+        header="Баста в Ледовом"
+        subheader="Большой концерт"
+        asideMode="dismiss"
+        actions={<Button>Подробнее</Button>}
+        /> */}
+        </Group>
+        </>
+    )
 }
 export default Add

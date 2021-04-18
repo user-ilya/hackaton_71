@@ -49,13 +49,13 @@ const Parent = () => {
 			</NativeSelect>
         </FormItem>
         <FormItem top="Дата рождения">
-			<Input type="data" />
+			<Input type="date" />
 		</FormItem>
         <FormItem top="О себе">
           <Textarea placeholder="Расскажите о себе" />
         </FormItem>
         <Div>
-            <Button mode="outline" size="l" before={<Icon24Add/>} after={<Counter>16</Counter>}>Add item</Button>
+            <Button mode="outline" size="l" before={<Icon24Add/>}>Добавить родителя</Button>
         </Div>
 
         <Div>
